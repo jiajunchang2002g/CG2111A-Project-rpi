@@ -6,9 +6,7 @@
 #include "serial.h"
 #include "serialize.h"
 
-/* TODO: Set PORT_NAME to the port name of your Arduino */
 #define PORT_NAME			"/dev/ttyACM0"
-/* END TODO */
 
 // Check and ensure that this baud rate is the same
 // as what is used in Alex.ino
@@ -19,7 +17,10 @@
 
 /* TODO: #define constants for the  filenames for Alex's private key, certificate, CA certificate name,
         and the Common Name for your laptop */
-
+#define PRIVATE_KEY Alex.key
+#define CERTIFICATE Alex.crt
+#define CA_CERTIFICATE_NAME signing.pem
+#define CLIENT_NAME laptop.com
 
 /* END TODO */
 
